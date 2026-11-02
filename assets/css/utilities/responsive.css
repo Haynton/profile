@@ -1,0 +1,20 @@
+/* Mobile : one column */
+
+@media (max-width: 640px) {
+  body {
+    padding: 20px 14px;
+  }
+
+.bento {
+  grid-template-areas: none;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.card {
+  grid-area: auto;
+}
+
+  .intro-header h1 {
+    font-size: 1.4rem;
+  }
+}

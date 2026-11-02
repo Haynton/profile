@@ -1,0 +1,9 @@
+:root {
+  --white: #ffffff;
+  --background: #f4f3ee;
+  --border: rgba(0, 0, 0, 0.1);
+  --text: #1f1e1c;
+  --text-soft: #5f5e5a;
+  --text-muted: #888780;
+  --link: #185fa5;
+}

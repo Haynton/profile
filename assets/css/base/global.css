@@ -1,0 +1,40 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* global */
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}

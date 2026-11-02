@@ -1,0 +1,140 @@
+/* global */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  border-radius: 20px;
+  border: 0.5px solid var(--border);
+  background: var(--white);
+}
+
+.card h1,
+.card h2,
+.card h3 {
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  padding-bottom: 0.9rem;
+}
+
+.card p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  padding-bottom: 0.9rem;
+}
+
+.card--wide p {
+  font-size: 1.05rem;
+}
+
+/* Card intro */
+
+.card--intro {
+  gap: 16px;
+  padding: 26px;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.intro-header h1 {
+  font-size: 1.7rem;
+}
+
+#profile-picture {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* card passions */
+
+.card--passions {
+    overflow-x: hidden;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.card--passions img {
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+}
+
+.head-passions {
+  padding: 20px;
+}
+
+/* card student */
+
+.card--student img {
+  max-width: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* card project */
+
+.card--project h3 {
+  font-size: 1.15rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  color: var(--link);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* card social */
+
+.card--social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.card--social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 0.5px solid var(--border);
+  background: var(--background);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+.card--social a:hover {
+  border-color: var(--text-muted);
+}
+
+.card--social .arrow {
+  margin-left: auto;
+  color: var(--text-muted);
+}
+
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

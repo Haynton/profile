@@ -1,0 +1,19 @@
+.bento {
+  display: grid;
+  grid-template-areas:
+    "intro    intro     social"
+    "passions portfolio student"
+    "passions hobbies   hobbies";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card--intro    { grid-area: intro; }
+.card--social   { grid-area: social; }
+.card--passions { grid-area: passions; }
+.card--portfolio { grid-area: portfolio; }
+.card--student { grid-area: student; }
+.card--hobbies  { grid-area: hobbies; }
+.card--pepigo   { grid-area: pepigo; }
